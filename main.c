@@ -108,7 +108,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pibCarta2);
     printf("Número de pontos turísticos: %d\n", qtdPontosTuristicosCarta2);
 
-    denPopulacionalCarta2 = (float) (populacaoCarta2 / areaCarta2);
+    denPopulacionalCarta2 = (float) populacaoCarta2 / areaCarta2;
     pibCarta2 *= 1000000000.0;
     pibCapitaCarta2 = (float) pibCarta2 / populacaoCarta2;
     printf("Densidade Populacional: %.2f hab/km²\n", denPopulacionalCarta2);
