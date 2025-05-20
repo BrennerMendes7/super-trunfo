@@ -146,6 +146,17 @@ int main() {
     printf("PIB per Capita: %d\n", resultadoPibCapita);
     printf("Super Poder: %d\n", resultadoSuperPoder);
     
+    printf("\n\n----- COMPARAÇÃO DE CARTAS (ATRIBUTO: QUANTIDADE DE PONTOS TURÍSTICOS) -----\n\n");
+    printf("Carta 1 - %s: %d\n", cidadeCarta1, qtdPontosTuristicosCarta1);
+    printf("Carta 2 - %s: %d\n", cidadeCarta2, qtdPontosTuristicosCarta2);
+    
+    if(qtdPontosTuristicosCarta1 > qtdPontosTuristicosCarta2) {
+      printf("Carta 1 (%s) venceu !", cidadeCarta1);
+    } else {
+      printf("Carta 2 (%s) venceu !", cidadeCarta2);
+    }
+    
+    
 
 
     return 0;
