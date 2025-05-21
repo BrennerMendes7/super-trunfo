@@ -155,6 +155,108 @@ int main() {
     } else {
       printf("Carta 2 (%s) venceu !", cidadeCarta2);
     }
+
+    int opcao;
+
+    printf("\n\n--- MENU PRINCIPAL ---\n\n");
+    printf("1 - Comparar nome da cidade\n");
+    printf("2 - Comparar população\n");
+    printf("3 - Comparar área\n");
+    printf("4 - Comparar PIB\n");
+    printf("5 - Comparar quantidade de pontos turísticos\n");
+    printf("6 - Comparar densidade populacional\n");
+    printf("7 - Sair do jogo\n");
+    printf("Escolha uma opção: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+
+      case 1:
+        printf("\nCidade carta 1: %s\nCidade carta 2: %s\n", cidadeCarta1, cidadeCarta2);
+        break;
+
+      case 2:
+        if(populacaoCarta1 > populacaoCarta2) {
+          printf("\nPOPULAÇÃO CARTA 1 (%s): %lu\nPOPULAÇÃO CARTA 2 (%s): %lu\nCARTA 1 VENCEU !", 
+          cidadeCarta1, populacaoCarta1, cidadeCarta2, populacaoCarta2);
+
+        } else if (populacaoCarta2 > populacaoCarta1) {
+           printf("\nPOPULAÇÃO CARTA 1 (%s): %lu\nPOPULAÇÃO CARTA 2 (%s): %lu\nCARTA 2 VENCEU !", 
+          cidadeCarta1, populacaoCarta1, cidadeCarta2, populacaoCarta2);
+
+        } else {
+           printf("\nPOPULAÇÃO CARTA 1 (%s): %lu\nPOPULAÇÃO CARTA 2 (%s): %lu\nEMPATE !", 
+          cidadeCarta1, populacaoCarta1, cidadeCarta2, populacaoCarta2);
+        }
+        break;
+
+      case 3:
+        if(areaCarta1 > areaCarta2) {
+          printf("\nÁREA CARTA 1 (%s): %.2f\nÁREA CARTA 2 (%s): %.2f\nCARTA 1 VENCEU !", 
+          cidadeCarta1, areaCarta1, cidadeCarta2, areaCarta2);
+
+        } else if (areaCarta2 > areaCarta1) {
+           printf("\nÁREA CARTA 1 (%s): %.2f\nÁREA CARTA 2 (%s): %.2f\nCARTA 2 VENCEU !", 
+          cidadeCarta1, areaCarta1, cidadeCarta2, areaCarta2);
+
+        } else {
+           printf("\nÁREA CARTA 1 (%s): %.2f\nÁREA CARTA 2 (%s): %.2f\nEMPATE !", 
+          cidadeCarta1, areaCarta1, cidadeCarta2, areaCarta2);
+        }
+        break;
+
+      case 4:
+        if(pibCarta1 > pibCarta2) {
+          printf("\nPIB CARTA 1 (%s): %.2f\nPIB CARTA 2 (%s): %.2f\nCARTA 1 VENCEU !", 
+          cidadeCarta1, pibCarta1, cidadeCarta2, pibCarta2);
+
+        } else if (pibCarta2 > pibCarta1) {
+           printf("\nPIB CARTA 1 (%s): %.2f\nPIB CARTA 2 (%s): %.2f\nCARTA 2 VENCEU !", 
+          cidadeCarta1, pibCarta1, cidadeCarta2, pibCarta2);
+
+        } else {
+           printf("\nPIB CARTA 1 (%s): %.2f\nPIB CARTA 2 (%s): %.2f\nEMPATE !", 
+          cidadeCarta1, pibCarta1, cidadeCarta2, pibCarta2);
+        }
+        break;
+
+      case 5:
+        if(qtdPontosTuristicosCarta1 > qtdPontosTuristicosCarta2) {
+          printf("\nPONTOS TURÍSTICOS CARTA 1 (%s): %d\nPONTOS TURÍSTICOS CARTA 2 (%s): %d\nCARTA 1 VENCEU !", 
+          cidadeCarta1, qtdPontosTuristicosCarta1, cidadeCarta2, qtdPontosTuristicosCarta2);
+
+        } else if (qtdPontosTuristicosCarta2 > qtdPontosTuristicosCarta1) {
+           printf("\nPONTOS TURÍSTICOS CARTA 1 (%s): %d\nPONTOS TURÍSTICOS CARTA 2 (%s): %d\nCARTA 2 VENCEU !", 
+          cidadeCarta1, qtdPontosTuristicosCarta1, cidadeCarta2, qtdPontosTuristicosCarta2);
+
+        } else {
+           printf("\nPONTOS TURÍSTICOS CARTA 1 (%s): %d\nPONTOS TURÍSTICOS CARTA 2 (%s): %d\nEMPATE !", 
+          cidadeCarta1, qtdPontosTuristicosCarta1, cidadeCarta2, qtdPontosTuristicosCarta2);
+        }
+        break;
+
+      case 6:
+        if(denPopulacionalCarta1 > denPopulacionalCarta2) {
+          printf("\nDENSIDADE POPULACIONAL CARTA 1 (%s): %.2f\nDENSIDADE POPULACIONAL CARTA 2 (%s): %.2f\nCARTA 1 VENCEU !", 
+          cidadeCarta1, denPopulacionalCarta1, cidadeCarta2, denPopulacionalCarta2);
+
+        } else if (denPopulacionalCarta2 > denPopulacionalCarta1) {
+           printf("\nDENSIDADE POPULACIONAL CARTA 1 (%s): %.2f\nDENSIDADE POPULACIONAL CARTA 2 (%s): %.2f\nCARTA 2 VENCEU !", 
+          cidadeCarta1, denPopulacionalCarta1, cidadeCarta2, denPopulacionalCarta2);
+
+        } else {
+           printf("\nDENSIDADE POPULACIONAL CARTA 1 (%s): %.2f\nDENSIDADE POPULACIONAL CARTA 2 (%s): %.2f\nEMPATE !", 
+          cidadeCarta1, denPopulacionalCarta1, cidadeCarta2, denPopulacionalCarta2);
+        }
+        break;
+
+      case 7:
+        printf("Jogo Encerrado !\n");
+        break;
+
+      default:
+         printf("Opção inválida !\n");
+    }
     
     
 
